@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs><linearGradient id="g" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" style="stop-color:#27455c"/><stop offset="100%" style="stop-color:#023430"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <text x="400" y="230" text-anchor="middle" fill="#00ed64" font-family="sans-serif" font-size="24" font-weight="700">Composite</text>
+  <text x="400" y="265" text-anchor="middle" fill="#889397" font-family="sans-serif" font-size="14">mock � 157 MinIO</text>
+</svg>

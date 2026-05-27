@@ -1,0 +1,87 @@
+.component-navbar {
+  background: transparent !important;
+  width: 100%;
+}
+
+.component-navbar__inner {
+  padding-left: 32px;
+  padding-right: 32px;
+  align-items: center;
+}
+
+.component-navbar__nav {
+  align-items: flex-start;
+}
+
+@media (min-width: 992px) {
+  .component-navbar__nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.component-navbar__toggle {
+  border-color: var(--border-light);
+  padding: 6px 10px;
+}
+
+.component-navbar__toggle:focus {
+  box-shadow: 0 0 0 2px rgba(177, 255, 5, 0.25);
+}
+
+.component-navbar .navbar-toggler-icon {
+  filter: invert(1);
+  opacity: 0.9;
+}
+
+.component-navbar .navbar-collapse {
+  flex-basis: 100%;
+}
+
+@media (min-width: 992px) {
+  .component-navbar .navbar-collapse {
+    flex-basis: auto;
+  }
+}
+
+.component-navbar .navbar-collapse.show,
+.component-navbar .navbar-collapse.collapsing {
+  margin-top: 8px;
+  padding-bottom: 8px;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 992px) {
+  .component-navbar .navbar-collapse.show,
+  .component-navbar .navbar-collapse.collapsing {
+    margin-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+  }
+}
+
+.component-nav-link {
+  color: var(--emerald-dirty) !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.component-nav-link:hover,
+.component-nav-link:focus {
+  color: var(--acid) !important;
+}
+
+.component-nav-link--muted,
+.component-nav-link:disabled {
+  color: var(--text-muted) !important;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.component-navbar__username {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 8px;
+}

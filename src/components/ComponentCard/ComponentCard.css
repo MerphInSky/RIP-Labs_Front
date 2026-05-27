@@ -1,0 +1,14 @@
+.card.card--no-add-btn {
+  border: 1px solid var(--border);
+}
+
+.card__thermal-resistance {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.card__thermal-resistance__value {
+  font-weight: 500;
+  color: var(--text-primary);
+}

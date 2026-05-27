@@ -1,0 +1,141 @@
+.heating-page__delete-form {
+  margin-top: 24px;
+}
+
+.heating-page__description {
+  margin-top: 16px;
+}
+
+.heating-page__description .form-label {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.heating-page__description textarea {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-light) !important;
+  color: var(--text-primary) !important;
+}
+
+.heating-page__description textarea:focus {
+  border-color: var(--acid) !important;
+  box-shadow: 0 0 0 2px rgba(23, 174, 185, 0.15);
+  outline: none;
+}
+
+.load-table__input {
+  max-width: 120px;
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-light) !important;
+  color: var(--text-secondary) !important;
+  font-size: 14px;
+}
+
+.load-table__input:focus {
+  border-color: var(--acid) !important;
+  box-shadow: 0 0 0 2px rgba(23, 174, 185, 0.12);
+  outline: none;
+}
+
+.load-table__input--accent {
+  color: var(--acid) !important;
+  font-weight: 600;
+}
+
+.heating-page {
+  position: relative;
+}
+
+.heating-page__blocking {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background: rgba(8, 12, 16, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--acid);
+  font-weight: 600;
+}
+
+.heating-detail--blocked {
+  pointer-events: none;
+  opacity: 0.72;
+}
+
+.heating-page__method-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.heating-page__method-btn {
+  border: 1px solid var(--border-light);
+  background: var(--card-bg);
+  color: var(--emerald-dirty);
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.heating-page__method-btn:hover:not(:disabled) {
+  border-color: var(--acid);
+  color: var(--acid);
+}
+
+.heating-page__method-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.heating-page__method-btn--accent {
+  border-color: rgba(23, 174, 185, 0.45);
+  color: var(--acid);
+}
+
+.heating-page__methods-hint {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 12px 0 20px;
+  max-width: 960px;
+}
+
+.load-table__actions {
+  vertical-align: top;
+}
+
+.heating-page__row-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-light);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heating-page__row-btn:last-child {
+  margin-bottom: 0;
+}
+
+.heating-page__row-btn:hover:not(:disabled) {
+  border-color: var(--acid);
+  color: var(--acid);
+}
+
+.heating-page__row-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.heating-page__row-btn--danger {
+  border-color: #c55f4d;
+  color: #c55f4d;
+}

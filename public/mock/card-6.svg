@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs><linearGradient id="g" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" style="stop-color:#000"/><stop offset="50%" style="stop-color:#00684a"/><stop offset="100%" style="stop-color:#111820"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <text x="400" y="240" text-anchor="middle" fill="#b1ff05" font-family="sans-serif" font-size="28" font-weight="700">Dynamic</text>
+  <text x="400" y="280" text-anchor="middle" fill="#889397" font-family="sans-serif" font-size="14">mock � 157 MinIO</text>
+</svg>

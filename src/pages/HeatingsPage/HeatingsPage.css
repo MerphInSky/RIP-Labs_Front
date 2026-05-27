@@ -1,0 +1,254 @@
+.heatings-page {
+  padding: 0 20px 48px;
+}
+
+.heatings-page__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heatings-page__heading {
+  margin: 20px 0 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ============================================================ */
+/* === ФИЛЬТРЫ === */
+/* ============================================================ */
+
+.heatings-page__filters {
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.heatings-page__filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.heatings-page__fg {
+  min-width: 160px;
+}
+
+.heatings-page__fg--grow {
+  flex: 1;
+  min-width: 200px;
+}
+
+.heatings-page__filters .form-label {
+  color: var(--text-secondary);
+}
+
+.heatings-page__filters .form-control,
+.heatings-page__filters .form-select {
+  background: var(--dark-bg);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+}
+
+.heatings-page__apply {
+  margin-top: 16px;
+  font-weight: 600;
+  border-color: var(--acid) !important;
+  background-color: rgba(23, 174, 185, 0.1) !important;
+  color: var(--acid) !important;
+}
+
+.heatings-page__apply:hover:not(:disabled) {
+  background-color: rgba(23, 174, 185, 0.2) !important;
+  color: var(--acid) !important;
+}
+
+/* ============================================================ */
+/* === КАРТОЧКИ === */
+/* ============================================================ */
+
+.heatings-page__cards {
+  margin-top: 20px;
+}
+
+.heatings-page__card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.heatings-page__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: var(--acid);
+}
+
+.heatings-page__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.heatings-page__linkish {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--emerald-dirty);
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.heatings-page__linkish:hover {
+  color: var(--acid);
+}
+
+.heatings-page__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.heatings-page__card-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.heatings-page__card-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  min-width: 100px;
+  font-weight: 500;
+}
+
+.heatings-page__card-value {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.heatings-page__card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-light);
+}
+
+/* ============================================================ */
+/* === КНОПКИ ДЕЙСТВИЙ === */
+/* ============================================================ */
+
+.heatings-page__btn-finish {
+  border-color: var(--acid) !important;
+  background-color: rgba(23, 174, 185, 0.1) !important;
+  color: var(--acid) !important;
+  font-weight: 600;
+}
+
+.heatings-page__btn-finish:hover:not(:disabled) {
+  background-color: rgba(23, 174, 185, 0.2) !important;
+}
+
+.heatings-page__btn-reject {
+  border-color: #c55f4d !important;
+  color: #c55f4d !important;
+  background-color: transparent !important;
+  font-weight: 600;
+}
+
+.heatings-page__btn-reject:hover:not(:disabled) {
+  background-color: rgba(197, 95, 77, 0.1) !important;
+}
+
+/* ============================================================ */
+/* === STATES === */
+/* ============================================================ */
+
+.heatings-page__error {
+  color: #c55f4d;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: rgba(197, 95, 77, 0.1);
+  border-radius: 8px;
+}
+
+.heatings-page__loader {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.heatings-page__empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* ============================================================ */
+/* === RESPONSIVE === */
+/* ============================================================ */
+
+@media (max-width: 768px) {
+  .heatings-page {
+    padding: 0 12px 32px;
+  }
+
+  .heatings-page__heading {
+    font-size: 1.25rem;
+  }
+
+  .heatings-page__filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .heatings-page__fg,
+  .heatings-page__fg--grow {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .heatings-page__apply {
+    width: 100%;
+  }
+
+  .heatings-page__card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .heatings-page__card-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .heatings-page__card-label {
+    min-width: auto;
+  }
+
+  .heatings-page__card-actions {
+    flex-direction: column;
+  }
+
+  .heatings-page__card-actions .btn {
+    width: 100%;
+  }
+}

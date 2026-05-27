@@ -1,0 +1,13 @@
+.component-filter-bar__form {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.component-filter-bar__form .search-input {
+  flex: 1 1 220px;
+  min-width: 0;
+  width: auto;
+}
